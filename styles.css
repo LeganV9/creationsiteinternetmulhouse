@@ -725,7 +725,8 @@ body {
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-229 {
-    background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+    background: url("/creation site internet mulhouse image d'accueil.webp");
+    opacity: 0.8;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
