@@ -533,7 +533,7 @@ body {
     /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
     /* 144px - 280px - leaving extra space for the navigation */
     /* changes on tablet */
-    padding: clamp(9rem, 25.95vw, 17.5rem) 0;
+    padding: clamp(9rem, 25.95vw, 12.5rem) 0;
     margin: auto;
     position: relative;
   }
@@ -725,8 +725,7 @@ body {
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-229 {
-    background: url("/creation site internet mulhouse image d'accueil.webp");
-    opacity: 0.8;
+    background-color: #4E4B66;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
