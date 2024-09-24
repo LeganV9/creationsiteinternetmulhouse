@@ -1219,3 +1219,339 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing-2063 {
+    padding: var(--sectionPadding);
+    /* clips svg graphic from overflowing the section */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+  }
+  #pricing-2063 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px, changes to 20px at large desktop */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #pricing-2063 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #pricing-2063 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #pricing-2063 .cs-item {
+    /* change to center to centralise all text in item */
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    /* 24px - 40px top & bottom */
+    /* 16px - 40px left & right */
+    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 3vw, 2.5rem);
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    grid-column: span 12;
+    z-index: 1;
+  }
+  #pricing-2063 .cs-package {
+    margin: 0 0 2rem;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid #e8f8f7;
+    display: flex;
+    flex-direction: column;
+  }
+  #pricing-2063 .cs-flex {
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #pricing-2063 .cs-flex .cs-name {
+    /* remove the margin that gives space between the name and cs-item-text. we'll apply this on cs-flex instead */
+    margin: 0;
+  }
+  #pricing-2063 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.25rem;
+    color: var(--primary);
+    display: block;
+  }
+  #pricing-2063 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 1.5rem;
+    color: var(--bodyTextColor);
+  }
+  #pricing-2063 .cs-price {
+    /* 39px - 49px */
+    font-size: clamp(2.4375rem, 5vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--secondary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+  #pricing-2063 .cs-duration {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin: 0;
+    color: var(--headerColor);
+    transform: translateY(-9px);
+  }
+  #pricing-2063 .cs-tag {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding: 0.5rem;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #pricing-2063 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #pricing-2063 .cs-li {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    list-style: none;
+    width: 100%;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  #pricing-2063 .cs-disabled {
+    filter: grayscale(1);
+    opacity: 0.5;
+  }
+  #pricing-2063 .cs-disabled .cs-icon {
+    filter: grayscale(1);
+  }
+  #pricing-2063 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: 1px;
+    display: block;
+  }
+  #pricing-2063 .button-solid {
+    width: 100%;
+  }
+  #pricing-2063 .cs-button-transparent {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: auto 0 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    overflow: hidden;
+    color: var(--headerColor);
+    border: 1px solid var(--headerColor);
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  }
+  #pricing-2063 .cs-button-transparent:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #pricing-2063 .cs-button-transparent:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+  #pricing-2063 .cs-button-transparent:hover:before {
+    width: 100%;
+  }
+  #pricing-2063 .cs-popular .cs-button-transparent {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+  #pricing-2063 .cs-exclusive {
+    /* 24px - 40px */
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background-color: var(--headerColor);
+  }
+  #pricing-2063 .cs-exclusive .cs-item-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-2063 .cs-exclusive .cs-duration {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-2063 .cs-exclusive .cs-package {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    border: none;
+  }
+  #pricing-2063 .cs-exclusive .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-2063 .cs-exclusive .cs-button-transparent {
+    color: var(--bodyTextColorWhite);
+    border-color: var(--bodyTextColorWhite);
+  }
+  #pricing-2063 .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #pricing-2063 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #pricing-2063 .cs-background::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(243, 252, 251, 0.84) 0%, rgba(243, 252, 251, 0.84) 100%), rgba(0, 0, 0, 0) 50% / cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing-2063 .cs-container {
+    max-width: 80rem;
+  }
+  #pricing-2063 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+  #pricing-2063 .cs-card-group {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1.25rem;
+  }
+  #pricing-2063 .cs-item {
+    grid-column: span 4;
+  }
+  #pricing-2063 .cs-exclusive {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-column: span 12;
+  }
+  #pricing-2063 .cs-exclusive .cs-package {
+    /* makes the children of cs-package controllable by the parent grid. this is so we can adjust the grid layout in a non-standard way to fit the design */
+    display: contents;
+  }
+  #pricing-2063 .cs-exclusive .cs-name {
+    grid-column: 1;
+    order: 1;
+  }
+  #pricing-2063 .cs-exclusive .cs-item-text {
+    max-width: 34.375rem;
+    margin: 0;
+    grid-column: 1;
+    order: 2;
+  }
+  #pricing-2063 .cs-exclusive .cs-ul {
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1;
+    order: 3;
+  }
+  #pricing-2063 .cs-exclusive .cs-price {
+    max-width: 12.5rem;
+    grid-column: 2;
+    grid-row: 2;
+    order: 4;
+  }
+  #pricing-2063 .cs-exclusive .cs-button-transparent {
+    max-width: 12.5rem;
+    grid-column: 2;
+    order: 5;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing-2063 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #pricing-2063 .cs-title {
+    margin: 0;
+  }
+}
+                                
